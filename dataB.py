@@ -20,7 +20,7 @@ def index():
   prayers = r.json()['data']
   DATE = r.json()['data']['date']
 
-  print(prayers)
+  #print(prayers)
   
   return render_template("app.html", prayers=prayers, DT=DATE)
 
