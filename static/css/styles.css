@@ -1,0 +1,153 @@
+.div1{
+    height: 100px;
+    width: 100px;
+}
+
+.p{
+    display: flex;
+    justify-content: end;
+}
+
+.div2{
+    height: 165px;
+    width: 300px;
+}
+
+.div4{
+    height: 70px;
+    width: 1350px;
+}
+
+.div4second{
+    height: 70px;
+    width: 1350px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div3{
+    height: 50px;
+    width: 100px;
+}
+
+.divimage{
+    height: 50px;
+    width: 100px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    height: 50px;
+    width: 1350px;
+    background-color: rgb(179, 80, 44);
+    border-radius: 30px;
+}
+
+.mom{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#image1{
+    height: 100px;
+    width: 180px;
+}
+
+#ML{
+    height: 165px;
+    width: 280px;
+}
+
+#image2{
+    height: 40px;
+    width: 200px;
+}
+#image3{
+    height: 40px;
+    width: 70px;
+}
+
+#image4{
+    height: 40px;
+    width: 70px;
+}
+
+#image5{
+    height: 40px;
+    width: 70px;
+}
+
+#image6{
+    height: 40px;
+    width: 70px;
+}
+
+#image7{
+    height: 40px;
+    width: 70px;
+}
+#image8{
+    height: 200px;
+    width: 350px;
+}
+
+
+table{
+    margin: auto;
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+}
+
+.div5{
+    height: 80px;
+    width: 1px;
+}
+
+
+
+.divspace1{
+    height: 40px;
+    width: 300px;
+}
+
+.divspace2{
+    height: 40px;
+    width: 300px;
+}
+
+.divspace3{
+    height: 40px;
+    width: 300px;
+}
+
+.divspace4{
+    height: 40px;
+    width: 300px;
+}
+
+.divspace5{
+    height: 40px;
+    width: 300px;
+}
+
+
+body {
+    background-image: linear-gradient(rgb(250, 235, 212),rgb(113, 167, 115));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

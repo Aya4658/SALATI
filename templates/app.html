@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salati</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body style="background-image: url_for('static', filename='images/background.png')">
+    <div class="header">
+        <div class="div1"></div>
+        <img id="image1" src="{{ url_for('static', filename='images/salati.png') }}" alt="title">
+        
+    </div>
+    <div class="mom">
+        <div class="div2">
+            <img id="ML" src="{{ url_for('static', filename='images/MAlocation.png') }}" alt="location">
+            <p>{{ DT['readable'] }}</p>
+        </div>
+    
+<!--
+    <div class="banner">
+        <div class="text">
+            
+            <input type="text" placeholder="الموقع">
+            <div class="div3"></div>
+            </div class="divimage">
+                <img id="image2" src="locationrequest.png" alt="locationRequest">
+            </div>
+            
+        </div>
+    </div>
+    <div class="div4"></div>
+
+    <div class="div4second"></div>
+ -->   
+        <table border="0">
+            <tr>
+                <td style="background-color: white;">
+                    {{ prayers['timings']['Fajr'] }}
+                </td>
+                <td style="background-color: white;">
+                    <div class="divspace1"></div>
+                </td>
+                <td style="background-color: white;"><img id="image3" src="{{ url_for('static', filename='images/fajr.png') }}" alt="fajr"></td>
+            
+            </tr>
+            <tr>
+                <td style="background-color: rgb(144, 199, 144);">
+                    {{ prayers['timings']['Dhuhr'] }}
+                </td>
+                <td style="background-color: rgb(144, 199, 144);">
+                    <div class="divspace2"></div>
+                </td>
+                <td style="background-color: rgb(144, 199, 144);"><img id="image4" src="{{ url_for('static', filename='images/duhr.png') }}" alt="duhr"></td>
+                
+            </tr>   
+            <tr>
+                <td style="background-color: white;">
+                    {{ prayers['timings']['Asr'] }}
+                </td>
+                <td style="background-color: white;">
+                    <div class="divspace3"></div>
+                </td>
+                <td style="background-color: white;"><img id="image5" src="{{ url_for('static', filename='images/asr.png') }}" alt="asr"></td>
+            
+            </tr>
+            <tr>
+                <td style="background-color: rgb(144, 199, 144);">
+                    {{ prayers['timings']['Maghrib'] }}
+                </td>
+                <td style="background-color: rgb(144, 199, 144);">
+                    <div class="divspace4"></div>
+                </td>
+                <td style="background-color: rgb(144, 199, 144);"><img id="image6" src="{{ url_for('static', filename='images/magrib.png') }}" alt="magrib"></td>
+            
+            </tr>
+            <tr>
+                <td style="background-color: white;">
+                    <p>{{ prayers['timings']['Isha'] }}</p>
+                </td>
+                <td style="background-color: white;">
+                    <div class="divspace5"></div>
+                </td>
+                <td style="background-color: white;"><img id="image7" src="{{ url_for('static', filename='images/isha.png') }}" alt="isha"></td>
+            
+            </tr>
+        </table>
+       
+    </div>
+    <div class="div5"></div>
+    <div class="end">
+        <img id="image8" src="{{ url_for('static', filename='images/ayah.jpg') }}" alt="reminder">
+        
+    </div>
+</body>
+</html>
