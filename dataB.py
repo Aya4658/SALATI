@@ -26,3 +26,12 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+'''How to run the code on the browser?
+  to run the application on the browser:
+    1.open terminal
+    2.get the python file directory: (like: cd C:/project/folder/)
+    3.run the command: python dataB.py 
+    4.while clicking on ctrl , click usig mouse on the localhost that appears ( http://127.0.0.1:5000 )
+'''
