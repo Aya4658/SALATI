@@ -2,6 +2,8 @@ import requests
 from json import *
 from flask import Flask,render_template
 from datetime import datetime
+import time
+from plyer import notification
 
 app = Flask(__name__)
 
@@ -15,13 +17,32 @@ def index():
 
   r = requests.get(url)
 
+  
+
   #print(r.json())
 
   prayers = r.json()['data']
   DATE = r.json()['data']['date']
 
-  #print(prayers)
+  F=r.json()['data']['timings']['Fajr']
+  D=r.json()['data']['timings']['Dhuhr']
+  A=r.json()['data']['timings']['Asr']
+  M=r.json()['data']['timings']['Maghrib']
+  I=r.json()['data']['timings']['Isha']
+
   
+  if time.strftime("%H:%M")==F:
+    notification.notify(title="صلاة الفجر",message="حان موعد صلاة الفجر",timeout=5)
+  if time.strftime("%H:%M")==D:
+    notification.notify(title="صلاة الظهر",message="حان موعد صلاة الظهر",timeout=5)
+  if time.strftime("%H:%M")==A:
+    notification.notify(title="صلاة العصر",message="حان موعد صلاة العصر",timeout=5)
+  if time.strftime("%H:%M")==M:
+    notification.notify(title="صلاة المغرب",message="حان موعد صلاة المغرب",timeout=5)
+  if time.strftime("%H:%M")==I:
+    notification.notify(title="صلاة العشاء",message="حان موعد صلاة العشاء",timeout=5)
+    
+
   return render_template("app.html", prayers=prayers, DT=DATE)
 
 if __name__ == "__main__":
